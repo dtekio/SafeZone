@@ -1,0 +1,57 @@
+.starterDescription {
+    margin: 16rem 1rem 16rem auto;
+}
+
+.starterImg {
+    margin:auto;
+} 
+
+.navbar {
+    z-index: 222;
+}
+
+
+
+.pendulum {
+    z-index: -222;
+    margin: auto;
+    background-color: black;
+    height: 30em;
+    width: 1.3em;
+    position: absolute;
+    top: -2.9em;
+    transform: rotate(15deg);
+    transform-origin: top;
+    animation: swing 2.5s infinite ease-in-out;
+}
+
+.pendulum::after {
+    position: absolute;
+    content: '';
+    height: 2.5em;
+    width: 2.5em;
+    border: 1.3em solid black;
+    border-radius: 50%;
+    bottom: -1.37em;
+    left: -0.5em;
+}
+
+@keyframes swing {
+    50% {
+        transform: rotate(-15deg);
+    }
+}
+
+#prices {
+    width: 50%;
+    margin: 3rem auto 3rem auto;
+}
+
+footer {
+    width:100%;
+    padding: 50px;
+    background-color: rgb(41, 41, 41);
+    color: beige;
+    text-align: center;
+}
+
