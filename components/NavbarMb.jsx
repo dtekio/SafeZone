@@ -47,7 +47,6 @@ function NavbarMb({ renderLinks }) {
         as={Menu}
         animation="overlay"
         icon="labeled"
-        poiting
         vertical
         visible={visible}
         width="thin"

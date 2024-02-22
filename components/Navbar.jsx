@@ -10,6 +10,7 @@ export default function Navbar() {
     return (
       <>
         <Menu.Item
+          href="/"
           name="logo"
           active={activeItem === "logo"}
           onClick={handleItemClick}
@@ -23,13 +24,21 @@ export default function Navbar() {
           />
         </Menu.Item>
         <Menu.Item
+          href="#home"
           name="Главная"
           active={activeItem === "home"}
           onClick={handleItemClick}
         />
         <Menu.Item
+          href="#about"
           name="О нас"
-          active={activeItem === "messages"}
+          active={activeItem === "about"}
+          onClick={handleItemClick}
+        />
+        <Menu.Item
+          href="#contact"
+          name="Связаться"
+          active={activeItem === "contact"}
           onClick={handleItemClick}
         />
       </>

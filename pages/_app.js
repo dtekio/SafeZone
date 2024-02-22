@@ -15,8 +15,9 @@ export default function Document({ Component, pageProps }) {
         <Component {...pageProps} />
       </Container>
       <footer>
-        <div>
+        <div id='contact'>
           <h5>Свяжитесь с нами</h5>
+          <p>+7 777 777 7777   -   us@gmail.com   -   XX:00-XX:00</p>
           <Icon size="big" link name="telegram" />
           <Icon size="big" link name="whatsapp" />
           <Icon size="big" link name="facebook" />
@@ -32,12 +33,8 @@ export default function Document({ Component, pageProps }) {
             <Icon name="youtube" /> YouTube
           </Button>
 
-          <h5>Контакты</h5>
-          <p>+7 777 777 7777</p>
-          <p>us@gmail.com</p>
-          <p>10:00-20:00</p>
-          <Divider />
-          <p>© Copyright 2024 Название - Все права защищены. </p>
+          <Divider /> 
+          <p>© Copyright 2024 (arsencorp) - Все права защищены. </p>
           <p>
           </p>
         </div>
